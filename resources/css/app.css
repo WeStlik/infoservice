@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom transition for dropdown menu */
+.dropdown-enter {
+    transform: scale(0.95);
+    opacity: 0;
+}
+.dropdown-enter-active {
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    transform: scale(1);
+    opacity: 1;
+}
+.dropdown-leave {
+    transform: scale(1);
+    opacity: 1;
+}
+.dropdown-leave-active {
+    transition: transform 0.075s ease-in, opacity 0.075s ease-in;
+    transform: scale(0.95);
+    opacity: 0;
+}
